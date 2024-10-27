@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+
+        .feedback-section {
+            position: relative; /* For positioning the button within the section */
+            max-width: 800px;
+            margin: 40px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .add-review-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffaa00;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .add-review-btn:hover {
+            background-color: #e69500;
+        }
+
+        .feedback-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subheading {
+            color: #ffaa00;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .subheading a {
+            color: #ffaa00;
+            text-decoration: none;
+        }
+
+        .feedback-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .reviews {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .review {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .review img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .review-content {
+            font-size: 14px;
+        }
+
+        .review-content .date {
+            font-weight: bold;
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .review-content p {
+            margin: 0;
+        }
+
+        .review-content a {
+            color: #ffaa00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Rating Stars */
+        .stars {
+            display: inline-block;
+            color: #ffaa00;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section class="feedback-section">
+        <!-- Add Review Button -->
+        <button class="add-review-btn">+ Add Review</button>
+        
+        <h2>We’re addressing a few issues...</h2>
+        <p class="subheading">
+            <a href="#">Leave a Comment</a> / From Management / By The Manager
+        </p>
+        <h3>Thanks for giving us your feedback online.</h3>
+        <p>Below are a few of the reviews that brought some recent issues to light for our business.</p>
+        
+        <div class="reviews">
+            <div class="review">
+                <img src="/photo/female user.jpg" alt="User Avatar">
+                <div class="review-content">
+                    <div class="stars">★ ★ ★ ☆ ☆</div>
+                    <p class="date">12/8/2018 via Yelp</p>
+                    <p>I'm sorry but this place lost a customer. I don't know if they changed management or what but it went downhill. I stopped by this evening for dinner. We... <a href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="/photo/male user.png" alt="User Avatar">
+                <div class="review-content">
+                    <div class="stars">★ ★ ☆ ☆ ☆</div>
+                    <p class="date">11/28/2018 via Google</p>
+                    <p>Fish and Chips was like eating fish sticks, they were also very dry. Their famous wings were terrible, no meat and very dry. The only thing that was good that we ordered was the garlic knots. They were very tasty... <a href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="/photo/female user.jpg" alt="User Avatar">
+                <div class="review-content">
+                    <div class="stars">★ ★ ★ ★ ☆</div>
+                    <p class="date">11/7/2018 via Yelp</p>
+                    <p>We visited on a Friday at 6 pm. The restaurant was 80% full, but it took 1 hour to get our food after ordering. You might survive this if you don't have... <a href="#">Read more</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Here’s what we’re going to do about it...</h3>
+        <p>Give a detailed explanation of new training, menu changes, atmosphere changes, etc. Break it down by topic and be specific.</p>
+    </section>
+</body>
+</html>
